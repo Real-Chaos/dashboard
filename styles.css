@@ -207,3 +207,37 @@
 .announcements-extra {
   grid-area: 2/5/6/6;
 }
+
+
+.announcements-extra .announcements {
+  padding: 2% 5%;
+}
+
+.announcements-extra .announcements {
+  margin-top: 20px;
+}
+
+.announcements .announcement-card {
+  background-color: white;
+  padding: 20px 20px;
+  border-radius: 8px;
+}
+
+.announcement-card .title {
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+.announcement-card p {
+  font-size: 12px;
+  font-family: var(--robo);
+}
+
+.announcement-card .announcement {
+  margin-top: 10px;
+}
+
+.announcement-card>.announcement:not(:last-child) {
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--offwhite);
+}
