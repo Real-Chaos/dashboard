@@ -13,6 +13,15 @@
   box-sizing: border-box;
 }
 
+.title {
+  color: black;
+  font-family: var(--robo);
+  font-weight: 500;
+  font-size: 18px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
 .sidebar {
   height: 100vh;
   background: var(--blue);
@@ -65,10 +74,7 @@
   height: 100%;
   grid-area: 1/2/2/6;
 }
-.projects, .announcements-extra {
-  background-color: var(--offwhite);
-  grid-area: 2/2/6/6;
-}
+
 
 .header {
   padding: 1% 3%;
@@ -142,4 +148,62 @@
   font-weight: bolder;
   border-radius: 8px;
   cursor: pointer;
+}
+
+
+.projects, .announcements-extra {
+  background-color: var(--offwhite);
+}
+
+
+.projects {
+  grid-area: 2/2/6/5;
+  padding: 2% 3%;
+  overflow-y: scroll;
+}
+
+.projects::-webkit-scrollbar {
+  width: 10px;
+}
+
+.projects::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+.projects::-webkit-scrollbar-thumb {
+  background-color: #050505;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
+}
+
+.projects .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.cards .card {
+  background-color: white;
+  padding: 30px 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 8px;
+  border-left: 8px solid var(--yellow);
+  display: grid;
+  gap: 15px;
+}
+
+.cards .card p {
+  font-size: 14px;
+}
+
+
+.cards .card .icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.announcements-extra {
+  grid-area: 2/5/6/6;
 }
