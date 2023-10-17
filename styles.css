@@ -206,6 +206,7 @@
 }
 .announcements-extra {
   grid-area: 2/5/6/6;
+  overflow-y: scroll;
 }
 
 
@@ -213,7 +214,7 @@
   padding: 2% 5%;
 }
 
-.announcements-extra .announcements {
+.announcements-extra .announcements{
   margin-top: 20px;
 }
 
@@ -240,4 +241,41 @@
 .announcement-card>.announcement:not(:last-child) {
   padding-bottom: 10px;
   border-bottom: 1px solid var(--offwhite);
+}
+
+.trending {
+  padding: 20px;
+}
+
+.announcements-extra::-webkit-scrollbar {
+  width: 10px;
+}
+
+.announcements-extra::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+.announcements-extra::-webkit-scrollbar-thumb {
+  background-color: #050505;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
+}
+
+.trending-cards {
+  background-color: white;
+  padding: 20px;
+}
+
+.trending-cards .trending-card {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--robo);
+}
+
+.trending-card img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
 }
